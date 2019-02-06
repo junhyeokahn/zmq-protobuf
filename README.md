@@ -1,2 +1,2 @@
 # zmq-protobuf
-communication between python and cpp  using zeromq and protobuf
+Examples of communication protocol between python and c++ using zmq & protobuf
