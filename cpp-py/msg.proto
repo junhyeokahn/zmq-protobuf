@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package RL;
+
+message DataSet {
+    uint32 count = 1;
+    repeated float joint_position = 2;
+    repeated float joint_velocity = 3;
+}
