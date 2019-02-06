@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/my_pub.dir/my_publisher.cpp.o  -o ../my_pub proto/libmy_proto.a /usr/local/lib/libprotobuf.dylib /usr/local/lib/libzmq.dylib 

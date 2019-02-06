@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+35913b48895faa5e39f233f280063700 src/proto/msg.pb.cc
+4e3c0ac79629f143a29b73bc05839075 src/proto/my_msg.pb.cc

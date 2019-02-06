@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message JointPosition
+{
+    int32 count = 1;
+    repeated float q = 2;
+}
+
+message JointVelocity
+{
+    int32 count = 1;
+    repeated float qdot = 2;
+}
