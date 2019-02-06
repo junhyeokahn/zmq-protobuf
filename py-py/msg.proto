@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package pb;
+
+enum ValueType {
+    //  the following tags correspond to hal.h: hal_type_t;
+    HAL_BIT   = 0;
+    HAL_FLOAT = 1;
+    HAL_S32   = 2;
+    HAL_U32   = 3;
+}
+
+enum ContainerType {
+    MT_TEST1          = 0;
+    MT_TEST2          = 1;
+    MT_TEST3          = 2;
+}
+message Pin {
+    ValueType   type = 1;
+    string      name = 2;
+
+    // One of the following must be filled in,
+    // depending on type.
+    bool          halbit   = 5;
+    double        halfloat = 6;
+    sfixed32      hals32   = 7;
+    fixed32       halu32   = 8;
+}
+
+message Container {
+    ContainerType type = 1;
+    repeated string   note = 2; // error text 'lines'
+    repeated Pin      pin  = 3;
+}

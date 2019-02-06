@@ -7,7 +7,6 @@
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 #include "build/src/proto/my_msg.pb.h"
 
-//#include <zmq.hpp>
 #include "zmq.hpp"
 
 
